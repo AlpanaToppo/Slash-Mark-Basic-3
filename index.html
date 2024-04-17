@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="./favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40%;
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+        img {
+            margin-top: 50px;
+            margin-left: 20px;
+            width: 400px;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: fill;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .shoe1 {
+            position: absolute;
+            z-index: 1;
+            transition: 1.5s;
+        }
+
+        .shoe2 {
+            position: relative;
+        }
+
+        .shoe1:hover {
+            z-index: 0;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .rpart {
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+
+        .title {
+            text-align: justify;
+            width: fit-content;
+            font-size: x-large;
+            font-weight: bold;
+            border-bottom-style: groove;
+            line-height: normal;
+        }
+
+        .desc {
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+
+        .desc li {
+            font-weight: 100;
+            font-size: large;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        .rpart {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .rlpart {
+            height: fit-content;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-style: solid;
+            border-radius: 8px;
+            border-width: 1px;
+            flex: 1;
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        .new {
+            padding-top: 10px;
+            display: flex;
+            line-height: 30px;
+            padding-bottom: 5px;
+            border-width: 5px;
+        }
+
+        .new-name {
+            font-weight: bold;
+        }
+
+        .details {
+            padding-top: 10px;
+            border-bottom-style: groove;
+            width: fit-content;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .buy-now-btn {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="
+        background-color: black;
+        color:white; 
+        justify-content: center;
+    ">
+        <p>Welcome to our Landing Page</p>
+    </header>
+    <section>
+        <div>
+            <img src="../shoe2.jpg" class="shoe1">
+        </div>
+        <div>
+            <img src="../shoe.jpg" class="shoe2">
+        </div>
+        <div class="rpart">
+
+            <div class="rrpart">
+                <p class="title">HOKA ONE ONE Men's Zinal Trail Running Shoes Sneakers</p>
+
+                <div class="desc">
+                    <ul>
+                        <li>
+                            The Hoka Zindal Blue Running Shoes are designed for runners seeking comfort, support, and
+                            performance.
+                        </li>
+                        <li>
+                            Featuring a
+                            stylish blue color scheme, these shoes incorporate Hoka's signature cushioning technology,
+                            providing
+                            a plush feel while
+                            running.
+                        </li>
+                        <li>
+                            The Zindal model offers a responsive ride, thanks to its lightweight construction and
+                            resilient midsole.
+                        </li>
+                        <li>
+                            With a
+                            focus on stability and durability, these shoes are suitable for both casual runners and
+                            serious
+                            athletes looking to
+                            enhance their running experience.
+                        </li>
+                    </ul>
+                </div>
+                <div style="display: flex;justify-content: space-evenly;padding-top: 5px;">
+                    <button class="btn buy-now-btn">Buy Now</button>
+                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="rlpart">
+                <div>
+                    <h3 class="details">Product details</h3>
+                    <div class="new">
+                        <div class="new-name">
+                            Sole material <br>
+                            Closure type <br>
+                            Water resistance level <br>
+                            Country of Origin
+                        </div>
+                        <div style="font-weight: normal;padding-left: 20px;">
+                            Rubber <br>
+                            Lace-Up <br>
+                            Not Water Resistant <br>
+                            Vietnam
+                        </div>
+                    </div>
+
+                    <hr style="width: 370px; height: 3px; background-color: gray;">
+
+                    <div>
+                        <h3 class="details" style="padding-top: 10px;">
+                            About this item
+                        </h3>
+                        <div>
+                            <ul style="
+                                padding-left: 20px;
+                                padding-top: 10px;
+                                line-height: 30px;
+                                font-size: 19px;
+                            ">
+                                <li>
+                                    Best for trail running, race
+                                </li>
+                                <li>
+                                    Mesh upper with 27% recycled polyester content
+                                </li>
+                                <li>
+                                    Toe cap
+                                </li>
+                                <li>
+                                    Gusseted tongue
+                                </li>
+                                <li>
+                                    Molded EVA sockliner
+                                </li>
+                                <li>
+                                    4mm lugs
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
